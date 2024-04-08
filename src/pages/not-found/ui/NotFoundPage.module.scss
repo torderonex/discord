@@ -1,0 +1,9 @@
+.NotFoundPage{
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font: var(--font-l);
+}

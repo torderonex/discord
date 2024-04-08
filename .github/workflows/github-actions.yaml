@@ -1,0 +1,38 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  buildAndTest:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 🗂️ Install dependencies
+        run: npm install
+
+      - name: 🔨 Build
+        run: npm run build:prod
+
+      - name: 🧪 Unit Test
+        run: npm run test:unit
+
+      - name: 🧪 Lint fix
+        run: npm run lint:fix
+
+      - name: 🧪 Lint check
+        run: npm run lint
