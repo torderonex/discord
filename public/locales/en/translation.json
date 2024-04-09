@@ -5,7 +5,15 @@
     "About": "About",
     "Reload": "Reload page",
     "Error" : "We're sorry, looks like there was an error",
-    "Collapse" : "Collpase"
-
-
+    "Collapse" : "Collpase",
+    "WelcomeBack" : "Welcome back!",
+    "WeExcited" : "We are so excited to see you again!",
+    "EmailOrPhone" : "email or phone number",
+    "Password" : "Password",
+    "ForgotPass" : "Forgot your password?",
+    "LogIn" : "Log in",
+    "NeedAc" : "Need an account?",
+    "Register" : "Register",
+    "LogQR" : "Log in with QR Code",
+    "ScanThis" : "Scan this with the Discord mobile app to log in instantly"
 }

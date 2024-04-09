@@ -2,37 +2,39 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import styles from './LoginForm.module.scss';
 import { AppLink, AppLinkTheme, Button, ButtonTheme, Input } from 'shared/ui';
 import qrcode from 'shared/assets/img/IMAGE.png';
+import { useTranslation } from 'react-i18next';
 interface LoginFormProps{
   className? : string,
 }
 
 export default function LoginForm({ className } : LoginFormProps) {
+	const { t } = useTranslation();
 	return (
 		<div className={classNames(styles.LoginForm,{},[className])}>
 			<div className={styles.left}>
 				<header>
-					<h1>Welcome back!</h1>
-					<p>We are so excited to see you again!</p>
+					<h1>{t('WelcomeBack')}</h1>
+					<p>{t('WeExcited')}</p>
 				</header>
 				<form>
-					<Input label='email or phone number' required={true}/>
+					<Input label={t('EmailOrPhone')} required={true}/>
 					<div>
-						<Input label='password' type={'password'} required={true}/>
-						<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'>Forgot your password?</AppLink>
+						<Input label={t('Password')}  type={'password'} required={true}/>
+						<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'>{t('ForgotPass')}</AppLink>
 					</div>
 					<div className={styles.log}>
-						<Button theme={ButtonTheme.BACKGROUND}>Log in</Button>
+						<Button theme={ButtonTheme.BACKGROUND}>{t('LogIn')}</Button>
 						<span className={styles.need}>
-						Need an account?
-							<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'> Register</AppLink>
+							{t('NeedAc')}
+							<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'> {t('Register')}</AppLink>
 						</span>
 					</div>
 				</form>
 			</div>
 			<div className={styles.right}>
 				<img src={qrcode}/>
-				<p className={styles.h}>Log in with QR Code</p>
-				<p>Scan this with the Discord mobile app to log in instantly</p>
+				<p className={styles.h}>{t('LogQR')}</p>
+				<p>{t('ScanThis')}</p>
 			</div>			
 		</div>
 	);
