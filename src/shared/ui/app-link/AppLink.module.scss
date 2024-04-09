@@ -1,6 +1,8 @@
 .AppLink{
     color : var(--primary-color);
     font: var(--font-l);
+    text-decoration: none;
+    font-weight: 300;
 }
 
 .primary{
@@ -9,4 +11,8 @@
 
 .secondary{
     color : var(--inverted-primary-color);
+}
+
+.blue{
+    color : var(--link-color);
 }
