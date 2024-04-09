@@ -23,7 +23,7 @@ export default function LoginForm({ className } : LoginFormProps) {
 						<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'>{t('ForgotPass')}</AppLink>
 					</div>
 					<div className={styles.log}>
-						<Button theme={ButtonTheme.BACKGROUND}>{t('LogIn')}</Button>
+						<Button theme={ButtonTheme.BACKGROUND} className={styles.btn}>{t('LogIn')}</Button>
 						<span className={styles.need}>
 							{t('NeedAc')}
 							<AppLink theme={AppLinkTheme.BLUE} className={styles.link} to='/'> {t('Register')}</AppLink>

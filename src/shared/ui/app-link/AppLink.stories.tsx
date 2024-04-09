@@ -30,4 +30,10 @@ export const SECONDARY: Story = {
 		children : 'text'
 	},
 };
+export const Blue: Story = {
+	args: {
+		theme : AppLinkTheme.BLUE,
+		children : 'text'
+	},
+};
   
