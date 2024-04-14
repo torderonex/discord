@@ -15,5 +15,7 @@
     "NeedAc" : "Need an account?",
     "Register" : "Register",
     "LogQR" : "Log in with QR Code",
-    "ScanThis" : "Scan this with the Discord mobile app to log in instantly"
+    "ScanThis" : "Scan this with the Discord mobile app to log in instantly",
+    "DirectMessages" : "Direct Messages",
+    "AddAServer" : "Add A Server"
 }

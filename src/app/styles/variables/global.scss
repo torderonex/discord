@@ -1,6 +1,7 @@
 @import '../fonts/fonts';
 
 :root {
+    --discord-color: #5865f2;
     --font-family-main : 'ubuntu',  serif;
     --font-size-m : 16px;
     --font-line-m : 24px;
@@ -13,11 +14,11 @@
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     // Размеры
-    --navbar-height : 50px;
+    --servers-navbar-width : 72px;
+    --channels-navbar-width : 240px;
     --sidebar-width : 300px;
     --sidebar-width-collapsed : 80px;
 
     // Z - INDEXES 
-
     --modal-z-index : 10;
 }

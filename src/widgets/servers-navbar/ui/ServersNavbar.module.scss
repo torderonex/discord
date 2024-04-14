@@ -1,0 +1,12 @@
+.ServersNavbar {
+    background-color: var(--servers-navbar-color);
+    width: var(--servers-navbar-width);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Скрываю полосу прокрутки */
+}

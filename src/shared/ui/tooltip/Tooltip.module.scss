@@ -1,0 +1,33 @@
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+  
+.arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--tooltip-bg);
+    transform: rotate(45deg);
+    top: 50%;
+    left: -4px;
+    margin-top: -4px;
+    z-index: -1;
+}

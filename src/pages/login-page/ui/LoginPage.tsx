@@ -1,7 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import styles from './LoginPage.module.scss';
 import LoginForm from 'widgets/login-form/ui/LoginForm';
-
 interface LoginPageProps{
   className? : string,
 }

@@ -1,0 +1,8 @@
+.ChannelsNavbar {
+    background-color: var(--channels-navbar-color);
+    width: var(--channels-navbar-width);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}

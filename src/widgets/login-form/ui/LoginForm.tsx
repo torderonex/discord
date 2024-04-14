@@ -3,6 +3,7 @@ import styles from './LoginForm.module.scss';
 import { AppLink, AppLinkTheme, Button, ButtonTheme, Input } from 'shared/ui';
 import qrcode from 'shared/assets/img/IMAGE.png';
 import { useTranslation } from 'react-i18next';
+
 interface LoginFormProps{
   className? : string,
 }

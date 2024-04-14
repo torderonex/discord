@@ -1,0 +1,85 @@
+.ProfileSection {
+    background-color: var(--profile-section-color);
+    width: var(--channels-navbar-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 52px;
+    bottom: 0;
+    margin-left: var(--servers-navbar-width);
+    padding: 0 5px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px;
+    padding: 3px 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #3d3e45;
+    }
+
+    .avatar {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--no-server-icon-bg);
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none;
+        }
+    }
+
+    .nickCont {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+
+        p {
+            font-size: 14px;
+            line-height: 1.2857142857142858;
+            font-weight: 400;
+        }
+
+        span {
+            font-size: 10px;
+            line-height: 1.2857142857142858;
+            font-weight: 400;
+        }
+    }
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .iconBg {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 3px;
+        
+        &:hover {
+            background-color: #3d3e45;
+        }
+    }
+}

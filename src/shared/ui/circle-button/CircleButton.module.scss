@@ -1,0 +1,65 @@
+.CircleButton {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.serverIcon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    transition: border-radius .3s ease-out, background-color .15s ease-out;
+    background-color: var(--no-server-icon-bg);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+
+    svg {
+        fill: var(--dm-icon-color);
+    }
+}
+
+.seenIndex {
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 8px;
+    height: 8px;
+    display: flex;
+    background-color: var(--seen-index-color);
+    border-radius: 10px;
+    transition: height .2s ease-out, opacity .3s ease-out;
+    opacity: 0;
+}
+
+.serverIcon:hover {
+    border-radius: 35%;
+    background-color: var(--discord-color);
+
+    & + .seenIndex {
+        height: 20px;
+        opacity: 1;
+    }
+
+    & > svg {
+        fill: #fff !important;
+    }
+}
+
+.active {
+    .serverIcon {
+        border-radius: 35%;
+    }
+
+    .seenIndex {
+        height: 36px !important;
+        opacity: 1;
+    }
+}

@@ -12,7 +12,7 @@ export enum AppRoutes{
 
 export const routePath : Record<AppRoutes,string> = {
 	[AppRoutes.LOGIN] : '/',
-	[AppRoutes.CHANNELS] : '/about',
+	[AppRoutes.CHANNELS] : '/channels',
 	[AppRoutes.NOT_FOUND] : '*'
 };
 
