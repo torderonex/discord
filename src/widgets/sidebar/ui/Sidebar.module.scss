@@ -1,0 +1,39 @@
+.Sidebar{
+    header{
+        font-size: 12px;
+        line-height: 1.33;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .tab{
+        display: block;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        width: 172px;
+
+        &:hover{
+            background-color: var(--bg-color);
+        }
+    }
+
+    .active{
+        background: hsl(228deg calc( 1 * 6%) 32.5% / 60%);
+        color: white;
+
+        &:hover{
+            cursor: inherit;
+        }
+    }
+
+    padding: 60px 20px;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}

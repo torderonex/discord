@@ -17,5 +17,9 @@
     "LogQR" : "Log in with QR Code",
     "ScanThis" : "Scan this with the Discord mobile app to log in instantly",
     "DirectMessages" : "Direct Messages",
-    "AddAServer" : "Add A Server"
-}
+    "AddAServer" : "Add A Server",
+    "UserSettings" : "User Settings",
+    "LanguageSettings" : "Language",
+    "Appearance" : "Appearance",
+    "MyAccount" : "My account"
+} 
