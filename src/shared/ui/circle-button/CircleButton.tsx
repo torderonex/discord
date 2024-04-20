@@ -32,6 +32,7 @@ export default function CircleButton(props: CircleButtonProps) {
 			<Tooltip
 				hoverObject={hoverObject}
 				title={tooltipTitle}
+				right={true}
 			/>
 		</div>
 	);

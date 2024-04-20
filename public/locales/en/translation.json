@@ -21,5 +21,11 @@
     "UserSettings" : "User Settings",
     "LanguageSettings" : "Language",
     "Appearance" : "Appearance",
-    "MyAccount" : "My account"
+    "MyAccount" : "My account",
+    "TurnOnMic" : "Turn On Microphone",
+    "TurnOffMic" : "Turn Off Microphone",
+    "TurnOnHeadp" : "Undeafen",
+    "TurnOffHeadp" : "Deafen",
+    "Settings" : "Settings",
+    "Online" : "Online"
 } 

@@ -21,5 +21,11 @@
     "UserSettings" : "Настройки",
     "LanguageSettings" : "Язык",
     "Appearance" : "Внешний вид",
-    "MyAccount" : "Моя учетная запись"
+    "MyAccount" : "Моя учетная запись",
+    "TurnOnMic" : "Включить микрофон",
+    "TurnOffMic" : "Выключить микрофон",
+    "TurnOnHeadp" : "Вкл. звук",
+    "TurnOffHeadp" : "Выкл. звук",
+    "Settings" : "Найстройки",
+    "Online" : "В сети"
 }

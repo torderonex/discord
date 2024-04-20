@@ -14,13 +14,13 @@
 .left {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 55%;
     border-radius: 5px;
-    padding: 3px 2px;
+    padding: 3px 5px;
     cursor: pointer;
 
     &:hover {
-        background-color: #3d3e45;
+        background-color: var(--profile-section-hover);
     }
 
     .avatar {
@@ -33,6 +33,11 @@
         border-radius: 50%;
         overflow: hidden;
         cursor: pointer;
+        -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none;
+        
 
         img {
             width: 100%;
@@ -53,12 +58,20 @@
             font-size: 14px;
             line-height: 1.2857;
             font-weight: 400;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none;
         }
 
         span {
             font-size: 10px;
             line-height: 1.2857;
             font-weight: 400;
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none;
         }
     }
 }
@@ -79,7 +92,7 @@
         padding: 3px;
         
         &:hover {
-            background-color: #3d3e45;
+            background-color: var(--profile-section-hover);
         }
 
     }

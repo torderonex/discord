@@ -33,6 +33,7 @@ export default function ServerSection(props: ServerSectionProps) {
 			<Tooltip
 				hoverObject={hoverObject}
 				title={'servers name'}
+				right={true}
 			/>
 		</div>
 	);

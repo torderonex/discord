@@ -1,13 +1,17 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import styles from './Tooltip.module.scss';
+import { classNames } from 'shared/lib/classNames/classNames';
 
 interface TooltipProps {
   className?: string,
   hoverObject: React.RefObject<HTMLDivElement>,
-  title: string
+  title: string,
+  right?: boolean,
+  left?: boolean,
+  down?: boolean
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ hoverObject, title }: TooltipProps) => {
+const Tooltip: React.FC<TooltipProps> = ({ className, hoverObject, title, right, left, down }: TooltipProps) => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	const handleMouseOver = useCallback(() => {
@@ -36,7 +40,7 @@ const Tooltip: React.FC<TooltipProps> = ({ hoverObject, title }: TooltipProps) =
 	return (
 		<>
 			{isVisible && (
-				<div className={styles.tooltip}>
+				<div className={classNames(styles.tooltip, { [styles.right] : right }, [className])}>
 					{title}
 					<div className={styles.arrow}></div>
 				</div>
