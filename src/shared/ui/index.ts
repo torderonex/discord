@@ -7,6 +7,8 @@ import Separator from './separator/Separator';
 import ServerSection from './server-section/ServerSection';
 import Tooltip from './tooltip/Tooltip';
 import CircleButton from './circle-button/CircleButton';
+import ChannelsNavbarSection from './channels-navbar-section/ChannelsNavbarSection';
+import SearchInput from './search-input/SearchInput';
 
 export {
 	AppLink,
@@ -19,5 +21,7 @@ export {
 	Separator,
 	ServerSection,
 	Tooltip,
-	CircleButton
+	CircleButton,
+	ChannelsNavbarSection,
+	SearchInput
 };

@@ -14,8 +14,8 @@ const testServers = [0, 1, 2, 3, 4, 5];
 
 export default function ServersNavbar({ className }: ServersNavbarProps) {
 	const { t } = useTranslation();
-	const [activeServer, setActiveServer] = useState<unknown>(null);
-	const [isDMActive, setIsDMActive] = useState<boolean>(false);
+	const [activeServer, setActiveServer] = useState<number>(null);
+	const [isDMActive, setIsDMActive] = useState<boolean>(true);
 	const [addServerClicked, setAddServerClicked] = useState<boolean>(false);
 
 	const handleDMClick = useCallback(() => {

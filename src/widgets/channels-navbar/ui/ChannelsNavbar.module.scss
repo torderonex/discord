@@ -9,4 +9,20 @@
             -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* IE10+/Edge */
             user-select: none;
+
+    header {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid var(--shadow-color);
+        padding: 0 10px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .sections {
+        padding: 0 10px;
+        width: 100%;
+    }
 }

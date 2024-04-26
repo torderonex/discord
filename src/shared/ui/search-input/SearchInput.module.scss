@@ -1,0 +1,40 @@
+.SearchInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+
+    input {
+        border: none;
+        background-color: var(--search-input-bg);
+        border-radius: 5px;
+        padding-left: 7px;
+        padding-right: 10px;
+        width: 100%;
+        height: 28px;
+        color: var(--navbars-inner-color);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    svg {
+        position: absolute;
+        width: 12px;
+        right: 10px;
+        cursor: pointer;
+        fill: var(--navbars-inner-color);
+
+        &:hover {
+            fill: var(--navbars-inner-color-hover);
+        }
+    }
+}

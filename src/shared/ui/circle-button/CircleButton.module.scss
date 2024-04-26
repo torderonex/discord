@@ -57,6 +57,10 @@
     .serverIcon {
         border-radius: 35%;
         background-color: var(--discord-color);
+
+        & > svg {
+            fill: #fff !important;
+        }
     }
 
     .seenIndex {

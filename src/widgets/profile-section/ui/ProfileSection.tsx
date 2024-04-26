@@ -1,15 +1,16 @@
 import styles from './ProfileSection.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import qrcode from 'shared/assets/img/IMAGE.png';
-import Micro from 'shared/assets/icons/micro.svg';
-import MicroMuted from 'shared/assets/icons/micro-muted.svg';
-import Headphones from 'shared/assets/icons/headphones.svg';
-import HeadphonesMuted from 'shared/assets/icons/headphones-muted.svg';
-import Settings from 'shared/assets/icons/settings.svg';
+import Micro from 'shared/assets/profile-section/micro.svg';
+import MicroMuted from 'shared/assets/profile-section/micro-muted.svg';
+import Headphones from 'shared/assets/profile-section/headphones.svg';
+import HeadphonesMuted from 'shared/assets/profile-section/headphones-muted.svg';
+import Settings from 'shared/assets/profile-section/settings.svg';
 import { useNavigate } from 'react-router-dom';
 import { useRef, useState } from 'react';
 import { Tooltip } from 'shared/ui';
 import { useTranslation } from 'react-i18next';
+import AvatarCircle from 'shared/ui/avatar-circle/AvatarCircle';
 
 interface ProfileSectionProps {
     className?: string,
@@ -42,9 +43,9 @@ export default function ProfileSection({ className }: ProfileSectionProps) {
 	return (
 		<div className={classNames(styles.ProfileSection, {}, [className])}>
 			<div className={styles.left}>
-				<div className={styles.avatar}>
+				<AvatarCircle>
 					<img src={qrcode} alt="" />
-				</div>
+				</AvatarCircle>
 				<div className={styles.nickCont}>
 					<p>{'бебтцан'}</p>
 					<span>{t('Online')}</span>

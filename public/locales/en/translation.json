@@ -27,5 +27,7 @@
     "TurnOnHeadp" : "Undeafen",
     "TurnOffHeadp" : "Deafen",
     "Settings" : "Settings",
-    "Online" : "Online"
+    "Online" : "Online",
+    "FindConvo" : "Find a conversation",
+    "Friends" : "Friends"
 } 

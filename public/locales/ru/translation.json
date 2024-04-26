@@ -27,5 +27,7 @@
     "TurnOnHeadp" : "Вкл. звук",
     "TurnOffHeadp" : "Выкл. звук",
     "Settings" : "Найстройки",
-    "Online" : "В сети"
+    "Online" : "В сети",
+    "FindConvo" : "Найти беседу",
+    "Friends" : "Друзья"
 }
