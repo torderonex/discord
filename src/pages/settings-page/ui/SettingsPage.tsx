@@ -1,13 +1,10 @@
 import { Sidebar,SidebarContent as SettingsContent } from 'widgets/sidebar';
 import styles from './SettingsPage.module.scss';
 import React, { useState } from 'react';
-import { AppearanceSettings } from 'widgets/settings/appearance';
 import { useTranslation } from 'react-i18next';
-import { MyAccountSettings } from 'widgets/settings/my-account';
-import { LanguageSettings } from 'widgets/settings/language';
-import { Button, ButtonTheme, CircleButton } from 'shared/ui';
+import { LanguageSettings,MyAccountSettings,AppearanceSettings } from 'widgets/settings';
+import { Button } from 'shared/ui';
 import { useNavigate } from 'react-router-dom';
-import { BackgroundInverted } from 'shared/ui/button/Button.stories';
 
 export default function SettingsPage() {
 	const { t } = useTranslation();
